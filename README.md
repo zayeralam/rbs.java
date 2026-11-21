@@ -1,30 +1,32 @@
-# Restaurant Billing System
+# RESTORA — Restaurant Billing System
 
-A menu-driven console-based Restaurant Billing System written in Java.
+A menu-driven Java console application for taking selections, managing quantities, reviewing an order and generating a bill.
 
 ## Features
-- Display a menu
-- Select an item using its item code
-- Enter quantities
-- Calculate the order total
+- Display menu and prices
+- Add selections by item code
+- Add quantities to existing selections
+- View the current order and total
 - Generate a bill
-- Handle invalid input
+- Clear an order after confirmation
+- Reject invalid codes, quantities and non-numeric input
 
-## Technology
-- Java
-- Console application
+## Menu
+The menu currently uses placeholder selection names and sample prices for demonstration. These can be changed after faculty approval.
 
-## Project status
-Initial draft prepared for faculty review. The implementation will be expanded after confirming the project approach and required syllabus concepts.
+## Requirements
+- Java JDK (Java 8 or newer recommended)
 
 ## Run
+In the directory containing the source file:
 
-Compile:
 ```bash
 javac RestaurantBillingSystem.java
-```
-
-Run:
-```bash
 java RestaurantBillingSystem
 ```
+
+## Concepts used
+Classes and objects, constructor, encapsulation (private fields and getter methods), arrays, methods, loops, conditional statements, switch, and exception handling with try-catch.
+
+## Project status
+Student group-project draft. Verify the required concepts with the course notes and faculty before final submission.
