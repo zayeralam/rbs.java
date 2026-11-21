@@ -112,7 +112,7 @@ public class RestaurantBillingSystem {
             System.out.println("No order to bill.");
             return;
         }
-        System.out.println("\n============= RESTORA BILL =============");
+        System.out.println("\n============= SERVEDESK BILL =============");
         System.out.printf("%-24s %-8s %-12s%n", "Selection", "Quantity", "Amount (Rs.)");
         for (int i = 0; i < menu.length; i++) {
             if (quantities[i] > 0) {
@@ -133,7 +133,7 @@ public class RestaurantBillingSystem {
 
     static void mainMenu() {
         System.out.println("\n========================================");
-        System.out.println("                 RESTORA");
+        System.out.println("                 SERVEDESK");
         System.out.println("        RESTAURANT BILLING SYSTEM");
         System.out.println("========================================");
         System.out.println("1. Display Menu");
@@ -161,7 +161,7 @@ public class RestaurantBillingSystem {
                         else System.out.println("Order retained.");
                     } else System.out.println("No order to clear.");
                     break;
-                case 6: System.out.println("Thank you for using RESTORA."); break;
+                case 6: System.out.println("Thank you for using SERVEDESK."); break;
                 default: System.out.println("Choose a number from 1 to 6.");
             }
         } while (choice != 6);
