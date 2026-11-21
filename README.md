@@ -1,32 +1,49 @@
 # SERVEDESK — Restaurant Billing System
 
-A menu-driven Java console application for taking selections, managing quantities, reviewing an order and generating a bill.
+SERVEDESK is a menu-driven Java console application demonstrating a simple restaurant order and billing workflow.
 
 ## Features
-- Display menu and prices
-- Add selections by item code
-- Add quantities to existing selections
-- View the current order and total
-- Generate a bill
-- Clear an order after confirmation
-- Reject invalid codes, quantities and non-numeric input
 
-## Menu
-The menu currently uses placeholder selection names and sample prices for demonstration. These can be changed after faculty approval.
+- Display selection codes and sample prices
+- Add selections by code
+- Add to quantities already ordered
+- Review the current order and calculated total
+- Generate a bill
+- Clear an order with confirmation
+- Handle unknown item codes, invalid quantities, and non-numeric input
+
+## Menu data
+
+The program uses placeholder selection labels and sample prices. These are demonstration values, not a real restaurant menu.
 
 ## Requirements
-- Java JDK (Java 8 or newer recommended)
+
+- Java Development Kit (JDK), Java 8 or later
 
 ## Run
-In the directory containing the source file:
+
+From the folder containing the source file:
 
 ```bash
 javac RestaurantBillingSystem.java
 java RestaurantBillingSystem
 ```
 
-## Concepts used
-Classes and objects, constructor, encapsulation (private fields and getter methods), arrays, methods, loops, conditional statements, switch, and exception handling with try-catch.
+## Concepts demonstrated
 
-## Project status
-Student group-project draft. Verify the required concepts with the course notes and faculty before final submission.
+- Classes and objects
+- Constructors
+- Encapsulation with private fields and getter methods
+- Arrays
+- Methods
+- Loops and conditional statements
+- Switch statement
+- Exception handling with `try-catch`
+
+## Testing
+
+See [TESTING.md](TESTING.md) for the 14-case test report and the scope of verification.
+
+## Project scope
+
+This is a console-based educational project. It does not include a GUI, database, persistence, tax, discounts, or customer records.
