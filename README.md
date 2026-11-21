@@ -1,4 +1,4 @@
-# RESTORA — Restaurant Billing System
+# SERVEDESK — Restaurant Billing System
 
 A menu-driven Java console application for taking selections, managing quantities, reviewing an order and generating a bill.
 
