@@ -6,16 +6,29 @@ on:
   pull_request:
     branches: [ main ]
 
+permissions:
+  contents: read
+
 jobs:
   compile:
+    name: Compile on Java 8
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-java@v4
+      - name: Checkout repository
+        uses: actions/checkout@v5
+
+      - name: Set up Java
+        uses: actions/setup-java@v6
         with:
           distribution: temurin
           java-version: '8'
-      - name: Compile
+
+      - name: Verify Java installation
+        run: java -version
+
+      - name: Compile source
         run: javac RestaurantBillingSystem.java
-      - name: Remove compiled files
+
+      - name: Clean compiled files
+        if: always()
         run: rm -f *.class
